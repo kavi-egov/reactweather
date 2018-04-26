@@ -6,6 +6,10 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+//style loader to load css loader
+// css loader to load the css script
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
 
 
 ReactDOM.render(
