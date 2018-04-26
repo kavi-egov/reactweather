@@ -4,10 +4,11 @@ var NavComponent = require('Navigation');
 var Main = (props) =>
       <div>
         <NavComponent/>
-        <h1>
-        rendering this from the main class
-        </h1>
-        {props.children}
+        <div clasName="row">
+          <div className="columns medium-6 large-4 small-centered">
+              {props.children}
+          </div>
+        </div>
       </div>
     ;
 
