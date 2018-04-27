@@ -1,0 +1,12 @@
+$margin : 2.5rem;
+$colorPurple : purple;
+
+.page-header {
+  color: $colorPurple;
+  margin-top: $margin;
+  margin-bottom: $margin
+}
+
+input[type=search] {
+  box-shadow: none
+}

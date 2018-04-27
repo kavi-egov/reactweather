@@ -19,7 +19,8 @@ var About = React.createClass({
 // instead use stateless functions
 var About = (props) =>
       <div>
-        this website fetches the weather of the city you want
+        <h1 className="text-center page-header"> About!</h1>
+        <p>this website fetches the weather of the city you want</p>
       </div>
   ;
 module.exports = About;

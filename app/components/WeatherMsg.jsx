@@ -3,9 +3,9 @@ var React = require('react');
 var WeatherMsg = ({temp, city}) =>
 
         <div>
-          <h4>
-            the current city is {city} the city's temprature is {temp}
-          </h4>
+          <h1 className="text-center">
+            temprature in {city} is {temp}
+          </h1>
         </div> ;
 
 module.exports = WeatherMsg;

@@ -13,12 +13,13 @@ module.exports = {
     console.log(' the api url : '+apiUrl);
 
     return axios.get(apiUrl).then(function(res) {
-      if (res.data.cod && res.data.message)
+      if (res.data.cod && res.data.message){
+        console.log("the error iin success : "+res.data.message);
         throw new error(res.data.message);
+      }
       else
         return res.data.main.temp;
     }, function(res) {
-      console.log(res.data.message);
       throw new error(res.data.message);
     });
   }
